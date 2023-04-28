@@ -32,7 +32,6 @@ class LoadFF extends StatelessWidget {
         splash: Text("Fast-Food Mode",style: TextStyle(color: Colors.white,fontSize: 40),),
         nextScreen: FFMode(),
         splashTransition: SplashTransition.fadeTransition,
-
         pageTransitionType: PageTransitionType.fade,
         backgroundColor: Colors.transparent,
       ),
@@ -316,7 +315,6 @@ class _FFModeState extends State<FFMode> {
                             res: res,
                             s: "FFM",
                           )));
-                      // txt = decoded[0]; //changing the state of our widget on data update
                     });
                   },
                   child: Text(
@@ -327,10 +325,6 @@ class _FFModeState extends State<FFMode> {
                   ),
                 ),
               ),
-              // Text(
-              //   'Selected Value: $dropdownValue',
-              //   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-              // )
             ],
           ),
         ),

@@ -32,7 +32,7 @@ class _ResultPageState extends State<ResultPage> {
     'Per Serve Size',
     // 'Category',
     // 'Fiber (g)',
-    // 'Sugar (g)',
+    'Sugar (g)',
     // 'Total Fat (g)',
     // 'Saturated Fat (g)',
     // 'Trans Fat (g)',
@@ -55,9 +55,22 @@ class _ResultPageState extends State<ResultPage> {
 
   Widget EmptyList() {
     return Center(
-      child: Text(
-        "Oops!!!\nNo Result possible with the given input.",
-        style: TextStyle(fontSize: 15),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(30.0),
+            child: Image.asset("lib/images/404_frs.png",),
+          ),
+          Text(
+            "Oops!!!",
+            style: TextStyle(fontSize: 20),
+          ),
+          Text(
+            "No Result found with the given input.",
+            style: TextStyle(fontSize: 15),
+          ),
+        ],
       ),
     );
   }

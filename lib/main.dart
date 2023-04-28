@@ -46,7 +46,7 @@ class Splash2 extends StatelessWidget {
             ),
           ),
           child: AnimatedSplashScreen(
-            duration: 4000,
+            duration: 3000,
             centered: true,
             splash: Wrap(
               children: [
